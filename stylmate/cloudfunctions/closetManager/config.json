@@ -1,0 +1,9 @@
+{
+  "name": "closetManager",
+  "version": "1.0.0",
+  "timeout": 60,
+  "memory": 256,
+  "runtime": "Nodejs10",
+  "handler": "index.main",
+  "description": "智能衣橱管理云函数 - 上传、穿搭、选衣"
+}

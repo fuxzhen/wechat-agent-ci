@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "skills": {
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1771591323504
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1771591397954
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1771591453388
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1771591884890
+    },
+    "fal": {
+      "version": "1.0.1",
+      "installedAt": 1771593795543
+    },
+    "react-best-practices": {
+      "version": "1.0.0",
+      "installedAt": 1772962856373
+    },
+    "ui-ux-design": {
+      "version": "1.0.0",
+      "installedAt": 1772962881806
+    },
+    "auth-patterns": {
+      "version": "1.0.0",
+      "installedAt": 1772962884168
+    },
+    "pls-seo-audit": {
+      "version": "1.0.0",
+      "installedAt": 1772962887002
+    },
+    "vercel-composition-patterns": {
+      "version": "1.0.0",
+      "installedAt": 1772962901432
+    },
+    "frontend-design-ultimate": {
+      "version": "1.0.0",
+      "installedAt": 1772962922067
+    },
+    "superdesign": {
+      "version": "1.0.0",
+      "installedAt": 1772962924291
+    },
+    "security-auditor": {
+      "version": "1.0.0",
+      "installedAt": 1772962942279
+    },
+    "tailwind-design-system": {
+      "version": "1.0.0",
+      "installedAt": 1772962961550
+    }
+  }
+}

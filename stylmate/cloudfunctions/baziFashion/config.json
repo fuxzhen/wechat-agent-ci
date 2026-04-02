@@ -1,0 +1,9 @@
+{
+  "name": "baziFashion",
+  "version": "1.0.3",
+  "timeout": 10,
+  "memory": 256,
+  "runtime": "Nodejs10",
+  "handler": "index.main",
+  "description": "智搭 StyleMate 八字穿搭分析云函数"
+}

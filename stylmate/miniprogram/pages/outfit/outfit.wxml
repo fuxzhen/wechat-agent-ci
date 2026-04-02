@@ -1,0 +1,63 @@
+<!--pages/outfit/outfit.wxml-->
+<view class="container">
+  <!-- 标题 -->
+  <view class="header">
+    <text class="title">智能选衣</text>
+  </view>
+
+  <!-- 场景选择 -->
+  <view class="occasion-section">
+    <text class="section-title">选择场合</text>
+    <view class="occasion-grid">
+      <view 
+        class="occasion-item {{occasion === item ? 'active' : ''}}" 
+        wx:for="{{occasions}}" 
+        wx:key="*this"
+        bindtap="selectOccasion"
+        data-occasion="{{item}}">
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 八字配色提示 -->
+  <view class="bazi-tip" wx:if="{{profile && profile.birth}}">
+    <text>基于您的八字分析，智能推荐配色</text>
+  </view>
+
+  <!-- 生成按钮 -->
+  <button class="generate-btn" bindtap="generateOutfit" disabled="{{loading || !hasCloset}}">
+    <text wx:if="{{loading}}">智能搭配中...</text>
+    <text wx:else>开始智能选衣</text>
+  </button>
+
+  <!-- 穿搭结果 -->
+  <view class="outfits-result" wx:if="{{outfits.length > 0}}">
+    <view class="result-title">推荐穿搭</view>
+    
+    <view class="outfit-card" wx:for="{{outfits}}" wx:key="index">
+      <view class="outfit-items">
+        <image 
+          class="outfit-image" 
+          wx:for="{{item.items}}" 
+          wx:for-item="clothing"
+          wx:key="_id"
+          src="{{clothing.imageUrl}}" 
+          mode="aspectFill"></image>
+      </view>
+      <view class="outfit-info">
+        <view class="outfit-score">
+          <text class="score-label">匹配度</text>
+          <text class="score-value">{{item.score}}</text>
+        </view>
+        <text class="outfit-reason">{{item.reason}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{!hasCloset && !loading}}">
+    <text>衣橱服饰不足</text>
+    <button class="go-closet-btn" bindtap="goToCloset">去上传</button>
+  </view>
+</view>

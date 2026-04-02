@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#4A90D9"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L0,0" fill="#9B59B6"/>
+    </marker>
+  </defs>
+  
+  <rect width="800" height="520" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="bold">图1-11 串行加工与并行加工</text>
+  
+  <!-- Left: Parallel Processing -->
+  <g transform="translate(200, 90)">
+    <text x="200" y="0" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="18" font-weight="bold">并行加工</text>
+    <text x="200" y="18" text-anchor="middle" fill="#4A90D9" font-family="sans-serif" font-size="11">同时处理多个信息 · 快速获取整体印象</text>
+    
+    <!-- Input signals -->
+    <g transform="translate(30, 50)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#00D9FF" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="11">信息1</text>
+    </g>
+    <g transform="translate(85, 50)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#00D9FF" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="11">信息2</text>
+    </g>
+    <g transform="translate(140, 50)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#00D9FF" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="11">信息3</text>
+    </g>
+    <g transform="translate(195, 50)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#00D9FF" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="11">信息4</text>
+    </g>
+    
+    <!-- Processing box -->
+    <g transform="translate(100, 110)">
+      <rect x="0" y="0" width="200" height="40" rx="6" fill="#00D9FF" opacity="0.2"/>
+      <text x="100" y="25" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="13" font-weight="bold">并行处理</text>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="200" y1="155" x2="200" y2="180" stroke="#00D9FF" stroke-width="2"/>
+    
+    <!-- Output -->
+    <g transform="translate(100, 190)">
+      <rect x="0" y="0" width="200" height="40" rx="6" fill="none" stroke="#00D9FF" stroke-width="2"/>
+      <text x="100" y="25" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13">整体理解</text>
+    </g>
+    
+    <!-- Use case -->
+    <g transform="translate(100, 255)">
+      <text x="100" y="0" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">适用场景：</text>
+      <text x="100" y="15" text-anchor="middle" fill="#4A90D9" font-family="sans-serif" font-size="10">印象认知 · 框架认知</text>
+    </g>
+  </g>
+  
+  <!-- Right: Serial Processing -->
+  <g transform="translate(600, 90)">
+    <text x="0" y="0" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="18" font-weight="bold">串行加工</text>
+    <text x="0" y="18" text-anchor="middle" fill="#8E44AD" font-family="sans-serif" font-size="11">依次处理 · 深度加工 · 获取完整细节</text>
+    
+    <!-- Sequential boxes -->
+    <g transform="translate(-60, 50)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#9B59B6" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="11">信息1</text>
+    </g>
+    <line x1="-35" y1="90" x2="-35" y2="110" stroke="#9B59B6" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <g transform="translate(-60, 115)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#9B59B6" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="11">信息2</text>
+    </g>
+    <line x1="-35" y1="155" x2="-35" y2="175" stroke="#9B59B6" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <g transform="translate(-60, 180)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#9B59B6" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="11">信息3</text>
+    </g>
+    <line x1="-35" y1="220" x2="-35" y2="240" stroke="#9B59B6" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <g transform="translate(-60, 245)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="none" stroke="#9B59B6" stroke-width="2"/>
+      <text x="25" y="22" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="11">信息4</text>
+    </g>
+    
+    <!-- Use case -->
+    <g transform="translate(0, 305)">
+      <text x="0" y="0" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">适用场景：</text>
+      <text x="0" y="15" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="10">细节认知 · 复杂任务</text>
+    </g>
+  </g>
+  
+  <!-- Bottom comparison - 分开写避免tspan问题 -->
+  <g transform="translate(400, 450)">
+    <text x="0" y="0" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="12" font-weight="bold">并行：</text>
+    <text x="40" y="0" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">快速扫视 · 认知成本低 · 获取概要</text>
+  </g>
+  <g transform="translate(400, 470)">
+    <text x="0" y="0" text-anchor="middle" fill="#9B59B6" font-family="sans-serif" font-size="12" font-weight="bold">串行：</text>
+    <text x="40" y="0" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">深度加工 · 认知成本高 · 获取细节</text>
+  </g>
+</svg>

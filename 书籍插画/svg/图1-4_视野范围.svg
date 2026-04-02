@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#4A90D9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="520" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="bold">图1-4 眼睛的视野范围</text>
+  
+  <!-- Eye circle (top view) -->
+  <g transform="translate(400, 230)">
+    <!-- Outer field of view -->
+    <ellipse cx="0" cy="0" rx="170" ry="110" fill="none" stroke="#00D9FF" stroke-width="1" stroke-dasharray="8,4" opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="140" ry="90" fill="none" stroke="#00D9FF" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+    
+    <!-- Eye outline -->
+    <ellipse cx="0" cy="0" rx="70" ry="50" fill="#0D0D0D" stroke="url(#cyanGrad)" stroke-width="3"/>
+    
+    <!-- Iris -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#4A90D9" stroke-width="2"/>
+    
+    <!-- Pupil -->
+    <circle cx="0" cy="0" r="12" fill="#00D9FF"/>
+    
+    <!-- Fovea -->
+    <circle cx="0" cy="0" r="6" fill="#00D9FF" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Angle labels - 外侧标注 -->
+  <!-- Superior (上) -->
+  <text x="400" y="95" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">上方 56°</text>
+  
+  <!-- Inferior (下) -->
+  <text x="400" y="470" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">下方 74°</text>
+  
+  <!-- Nasal (鼻侧) - left -->
+  <text x="140" y="235" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">鼻侧 65°</text>
+  
+  <!-- Temporal (颞侧) - right -->
+  <text x="660" y="235" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">颞侧 90°</text>
+  
+  <!-- Central凹 annotation - 右上角 -->
+  <g transform="translate(580, 150)">
+    <rect x="0" y="0" width="100" height="35" rx="6" fill="#00D9FF" opacity="0.15"/>
+    <text x="50" y="15" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="11">中央凹</text>
+    <text x="50" y="27" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="9">1-2°</text>
+  </g>
+  
+  <!-- Bottom explanation -->
+  <g transform="translate(400, 420)">
+    <text x="0" y="0" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="13">人类动态视野范围</text>
+    <text x="0" y="20" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="12">上方56° · 下方74° · 鼻侧65° · 颞侧90°</text>
+    <text x="0" y="38" text-anchor="middle" fill="#4A90D9" font-family="sans-serif" font-size="11">注：中央凹视野仅1-2°，是视觉最敏感区域</text>
+  </g>
+</svg>

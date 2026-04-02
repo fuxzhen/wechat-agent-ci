@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/settings/settings",
+    "pages/closet/closet",
+    "pages/outfit/outfit"
+  ],
+  "window": {
+    "navigationBarTitleText": "智搭 StyleMate",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

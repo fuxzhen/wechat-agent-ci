@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" width="850" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#4A90D9"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FF8C42"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L0,0" fill="#00D9FF"/>
+    </marker>
+  </defs>
+  
+  <rect width="850" height="520" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="425" y="40" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="bold">图1-8 界面区块的三个认知阶段</text>
+  
+  <!-- Funnel shape - 居中 -->
+  <g transform="translate(350, 130)">
+    <!-- Stage 1: Attention -->
+    <path d="M -160 -25 L 160 -25 L 120 25 L -120 25 Z" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+    <text x="0" y="0" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">阶段1: 注意引导</text>
+    
+    <!-- Arrow down -->
+    <line x1="0" y1="30" x2="0" y2="55" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 2: Content -->
+    <path d="M -110 60 L 110 60 L 80 110 L -80 110 Z" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+    <text x="0" y="82" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="16" font-weight="bold">阶段2: 内容认知</text>
+    
+    <!-- Arrow down -->
+    <line x1="0" y1="115" x2="0" y2="140" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 3: Action -->
+    <path d="M -70 145 L 70 145 L 40 195 L -40 195 Z" fill="none" stroke="url(#orangeGrad)" stroke-width="3"/>
+    <text x="0" y="167" text-anchor="middle" fill="#FF6B35" font-family="sans-serif" font-size="16" font-weight="bold">阶段3: 行为驱动</text>
+  </g>
+  
+  <!-- 右侧说明框 -->
+  <g transform="translate(680, 130)">
+    <text x="0" y="0" text-anchor="middle" fill="#FF6B35" font-family="sans-serif" font-size="14" font-weight="bold">认知漏斗</text>
+    <line x1="-30" y1="10" x2="30" y2="10" stroke="#FF6B35" stroke-width="2"/>
+    <text x="0" y="30" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">每个阶段都是</text>
+    <text x="0" y="45" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="11">用户流失点</text>
+  </g>
+  
+  <!-- 阶段详情 - 底部左侧 -->
+  <g transform="translate(80, 380)">
+    <text x="0" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="14" font-weight="bold">关键设计要点</text>
+    <text x="0" y="25" fill="#00D9FF" font-family="sans-serif" font-size="12">阶段1 · 注意引导</text>
+    <text x="10" y="42" fill="#E0E0E0" font-family="sans-serif" font-size="11">突破"Banner盲视"，吸引注意力</text>
+    <text x="0" y="62" fill="#00D9FF" font-family="sans-serif" font-size="12">阶段2 · 内容认知</text>
+    <text x="10" y="79" fill="#E0E0E0" font-family="sans-serif" font-size="11">信息精准匹配用户兴趣</text>
+    <text x="0" y="99" fill="#FF6B35" font-family="sans-serif" font-size="12">阶段3 · 行为驱动</text>
+    <text x="10" y="116" fill="#E0E0E0" font-family="sans-serif" font-size="11">降低操作成本，促进行为发生</text>
+  </g>
+  
+  <!-- 流程说明 - 底部右侧 -->
+  <g transform="translate(450, 380)">
+    <text x="0" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="14" font-weight="bold">用户认知路径</text>
+    <text x="0" y="22" fill="#E0E0E0" font-family="sans-serif" font-size="11">① 视觉突显 → ② 信息加工 → ③ 操作意愿</text>
+    <text x="0" y="40" fill="#4A90D9" font-family="sans-serif" font-size="11">获取关注 → 价值判断 → 执行成本</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "stylmate",
+  "version": "1.0.0",
+  "description": "智搭 StyleMate 微信小程序",
+  "cloud": true,
+  "miniprogramRoot": "./miniprogram/",
+  "cloudFunctionsRoot": "./cloudfunctions/",
+  "scripts": {
+    "deploy:cloud": "npm run build && tcb fn deploy baziFashion",
+    "deploy:db": "tcb database init"
+  },
+  "dependencies": {
+    "tcb-admin-node": "^1.31.0"
+  },
+  "devDependencies": {
+    "@cloudbase/cli": "^1.12.0"
+  }
+}

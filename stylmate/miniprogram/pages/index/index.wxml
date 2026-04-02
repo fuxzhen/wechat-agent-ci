@@ -1,0 +1,49 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 标题区 -->
+  <view class="header">
+    <text class="app-title">智搭</text>
+    <text class="app-subtitle">StyleMate</text>
+  </view>
+
+  <!-- 八字穿搭区 -->
+  <view class="bazi-section" wx:if="{{profile && todayRecommendation}}" bindtap="goToOnboarding">
+    <view class="section-label">今日穿搭</view>
+    <view class="recommendation-card">
+      <view class="vibe">{{todayRecommendation.recommendation.vibe}}</view>
+      <view class="element">五行：{{todayRecommendation.recommendation.lucky_element}}</view>
+      <view class="colors">
+        <text class="color-label">推荐色：</text>
+        <text class="color-list">{{todayRecommendation.recommendation.colors}}</text>
+      </view>
+      <view class="reason">{{todayRecommendation.analysis.reason}}</view>
+    </view>
+  </view>
+
+  <!-- 未设置配置 -->
+  <view class="bazi-section empty" wx:if="{{!profile || !profile.birth}}" bindtap="goToSettings">
+    <view class="section-label">八字穿搭</view>
+    <view class="empty-card">
+      <text>点击设置您的生日，开始智能穿搭</text>
+    </view>
+  </view>
+
+  <!-- 智能选衣入口 -->
+  <view class="menu-section">
+    <view class="menu-item" bindtap="goToCloset">
+      <text class="menu-icon">👗</text>
+      <text class="menu-title">我的衣橱</text>
+      <text class="menu-desc">管理服饰资产</text>
+    </view>
+    <view class="menu-item" bindtap="goToOutfit">
+      <text class="menu-icon">✨</text>
+      <text class="menu-title">智能选衣</text>
+      <text class="menu-desc">基于衣橱的穿搭推荐</text>
+    </view>
+  </view>
+
+  <!-- 设置入口 -->
+  <view class="settings-icon" bindtap="goToSettings">
+    <text>⚙️</text>
+  </view>
+</view>

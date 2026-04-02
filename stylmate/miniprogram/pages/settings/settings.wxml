@@ -1,0 +1,49 @@
+<!-- pages/settings/settings.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">⚙️ 设置</text>
+    <text class="subtitle">输入你的出生信息</text>
+  </view>
+
+  <view class="form">
+    <view class="form-item">
+      <text class="label">名字</text>
+      <input class="input" placeholder="Optional" model:value="{{name}}" />
+    </view>
+
+    <view class="form-item">
+      <text class="label">出生年份</text>
+      <picker mode="selector" range="{{years}}" bindchange="onYearChange">
+        <view class="picker">{{birth.year || '选择年份'}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <text class="label">出生月份</text>
+      <picker mode="selector" range="{{months}}" bindchange="onMonthChange">
+        <view class="picker">{{birth.month || '选择月份'}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <text class="label">出生日期</text>
+      <picker mode="selector" range="{{days}}" bindchange="onDayChange">
+        <view class="picker">{{birth.day || '选择日期'}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <text class="label">出生时辰</text>
+      <picker mode="selector" range="{{hours}}" bindchange="onHourChange">
+        <view class="picker">{{birth.hour !== null ? birth.hour + '时' : '选择时辰'}}</view>
+      </picker>
+    </view>
+
+    <button class="btn-save" bindtap="saveProfile">💾 保存</button>
+  </view>
+
+  <view class="tips">
+    <text class="tip-title">💡 提示</text>
+    <text class="tip-text">八字分析需要准确的出生时间，越精确越好~</text>
+  </view>
+</view>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#4A90D9"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L0,0" fill="#00D9FF"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="480" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="bold">图1-9 界面认知的五阶段模型</text>
+  
+  <!-- Five stages - 更宽敞的布局 -->
+  <g transform="translate(80, 100)">
+    <!-- Stage 1 -->
+    <g transform="translate(0, 0)">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+      <text x="50" y="45" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="18" font-weight="bold">1</text>
+      <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">印象</text>
+      <text x="50" y="88" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="10">50ms</text>
+    </g>
+    
+    <line x1="95" y1="50" x2="135" y2="50" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 2 -->
+    <g transform="translate(140, 0)">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+      <text x="50" y="45" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="18" font-weight="bold">2</text>
+      <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">框架</text>
+      <text x="50" y="88" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="10">扫视</text>
+    </g>
+    
+    <line x1="195" y1="50" x2="235" y2="50" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 3 -->
+    <g transform="translate(240, 0)">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+      <text x="50" y="45" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="18" font-weight="bold">3</text>
+      <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">流转</text>
+      <text x="50" y="88" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="10">跳转</text>
+    </g>
+    
+    <line x1="295" y1="50" x2="335" y2="50" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 4 -->
+    <g transform="translate(340, 0)">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="url(#cyanGrad)" stroke-width="3"/>
+      <text x="50" y="45" text-anchor="middle" fill="#00D9FF" font-family="sans-serif" font-size="18" font-weight="bold">4</text>
+      <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">细节</text>
+      <text x="50" y="88" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="10">聚焦</text>
+    </g>
+    
+    <line x1="395" y1="50" x2="435" y2="50" stroke="#00D9FF" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Stage 5 -->
+    <g transform="translate(440, 0)">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="#FF6B35" stroke-width="3"/>
+      <text x="50" y="45" text-anchor="middle" fill="#FF6B35" font-family="sans-serif" font-size="18" font-weight="bold">5</text>
+      <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">行为</text>
+      <text x="50" y="88" text-anchor="middle" fill="#E0E0E0" font-family="sans-serif" font-size="10">决策</text>
+    </g>
+  </g>
+  
+  <!-- Bottom descriptions - 更大的间距 -->
+  <g transform="translate(80, 240)">
+    <g transform="translate(0, 0)">
+      <text x="50" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="10">印象认知</text>
+      <text x="50" y="14" fill="#4A90D9" font-family="sans-serif" font-size="9">快速判断</text>
+    </g>
+    <g transform="translate(140, 0)">
+      <text x="50" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="10">框架认知</text>
+      <text x="50" y="14" fill="#4A90D9" font-family="sans-serif" font-size="9">结构解构</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <text x="50" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="10">视线流转</text>
+      <text x="50" y="14" fill="#4A90D9" font-family="sans-serif" font-size="9">目标定位</text>
+    </g>
+    <g transform="translate(420, 0)">
+      <text x="50" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="10">细节认知</text>
+      <text x="50" y="14" fill="#4A90D9" font-family="sans-serif" font-size="9">信息提取</text>
+    </g>
+    <g transform="translate(560, 0)">
+      <text x="50" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="10">行为驱动</text>
+      <text x="50" y="14" fill="#FF6B35" font-family="sans-serif" font-size="9">决策行动</text>
+    </g>
+  </g>
+  
+  <!-- Key insight box -->
+  <g transform="translate(80, 300)">
+    <rect x="0" y="0" width="740" height="50" rx="6" fill="#00D9FF" opacity="0.1"/>
+    <text x="20" y="20" fill="#00D9FF" font-family="sans-serif" font-size="13" font-weight="bold">核心洞察：</text>
+    <text x="20" y="38" fill="#E0E0E0" font-family="sans-serif" font-size="11">用户认知是分层分级的信息探索旅程，从感觉评价到认知评价，从主题认知到细节认知。</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(80, 390)">
+    <text x="0" y="0" fill="#E0E0E0" font-family="sans-serif" font-size="11">适用场景：</text>
+    <text x="60" y="0" fill="#4A90D9" font-family="sans-serif" font-size="10">印象认知→框架认知→视线流转→细节认知→行为驱动</text>
+  </g>
+</svg>

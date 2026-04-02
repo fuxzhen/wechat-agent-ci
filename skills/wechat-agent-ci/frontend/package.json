@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "miniprogram-ci": "^2.1.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "babel-jest": "^30.3.0",
+    "jest": "^30.3.0",
+    "miniprogram-simulate": "^1.6.1"
+  }
+}

@@ -1,0 +1,58 @@
+<!--pages/closet/closet.wxml-->
+<view class="container">
+  <!-- 标题 -->
+  <view class="header">
+    <text class="title">我的衣橱</text>
+    <text class="subtitle"> ({{items.length}} 件)</text>
+  </view>
+
+  <!-- 分类统计 -->
+  <view class="category-bar">
+    <view class="category-item {{activeTab === 'all' ? 'active' : ''}}" bindtap="switchTab" data-tab="all">
+      <text>全部</text>
+      <text class="count">{{items.length}}</text>
+    </view>
+    <view class="category-item {{activeTab === 'top' ? 'active' : ''}}" bindtap="switchTab" data-tab="top">
+      <text>上衣</text>
+      <text class="count">{{categories.top}}</text>
+    </view>
+    <view class="category-item {{activeTab === 'bottom' ? 'active' : ''}}" bindtap="switchTab" data-tab="bottom">
+      <text>下装</text>
+      <text class="count">{{categories.bottom}}</text>
+    </view>
+    <view class="category-item {{activeTab === 'outer' ? 'active' : ''}}" bindtap="switchTab" data-tab="outer">
+      <text>外套</text>
+      <text class="count">{{categories.outer}}</text>
+    </view>
+    <view class="category-item {{activeTab === 'shoes' ? 'active' : ''}}" bindtap="switchTab" data-tab="shoes">
+      <text>鞋子</text>
+      <text class="count">{{categories.shoes}}</text>
+    </view>
+  </view>
+
+  <!-- 服饰列表 -->
+  <scroll-view class="closet-grid" scroll-y>
+    <block wx:if="{{filteredItems.length > 0}}">
+      <view class="clothing-card" wx:for="{{filteredItems}}" wx:key="_id">
+        <image class="clothing-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+        <view class="clothing-info">
+          <text class="clothing-category">{{item.category}}</text>
+          <text class="clothing-color">{{item.color}}</text>
+        </view>
+        <view class="delete-btn" bindtap="deleteItem" data-id="{{item._id}}">×</view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="empty-state">
+        <text wx:if="{{activeTab === 'all'}}>还没有服饰，快去上传吧</text>
+        <text wx:else>该分类还没有服饰</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 上传按钮 -->
+  <button class="upload-btn" bindtap="chooseImage" disabled="{{uploading}}">
+    <text wx:if="{{uploading}}">上传中...</text>
+    <text wx:else>+ 添加服饰</text>
+  </button>
+</view>

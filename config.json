@@ -1,0 +1,9 @@
+{
+  "name": "Clark",
+  "birth": {
+    "year": 1995,
+    "month": 5,
+    "day": 20,
+    "hour": 8
+  }
+}

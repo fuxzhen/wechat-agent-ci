@@ -1,0 +1,143 @@
+/* pages/closet/closet.wxss - 莫兰迪色系 */
+page {
+  background: #f5f5f0;
+  height: 100%;
+}
+
+.container {
+  padding: 30rpx;
+  padding-bottom: 120rpx;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  font-size: 44rpx;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-right: 16rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+
+/* 分类导航 */
+.category-bar {
+  display: flex;
+  gap: 16rpx;
+  margin-bottom: 30rpx;
+  overflow-x: auto;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 32rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  font-size: 26rpx;
+  color: #666;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.category-item.active {
+  background: #7d8a7d;
+  color: #ffffff;
+}
+
+.category-item .count {
+  font-size: 22rpx;
+  opacity: 0.7;
+  margin-top: 4rpx;
+}
+
+/* 服饰网格 */
+.closet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+  height: calc(100vh - 400rpx);
+}
+
+.clothing-card {
+  background: #ffffff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.clothing-image {
+  width: 100%;
+  height: 280rpx;
+}
+
+.clothing-info {
+  padding: 16rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.clothing-category {
+  font-size: 24rpx;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.clothing-color {
+  font-size: 26rpx;
+  color: #4a4a4a;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12rpx;
+  right: 12rpx;
+  width: 48rpx;
+  height: 48rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 空状态 */
+.empty-state {
+  grid-column: span 2;
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 上传按钮 */
+.upload-btn {
+  position: fixed;
+  bottom: 40rpx;
+  left: 30rpx;
+  right: 30rpx;
+  height: 96rpx;
+  background: #7d8a7d;
+  border-radius: 48rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.upload-btn[disabled] {
+  background: #ccc;
+}
